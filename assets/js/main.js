@@ -10,8 +10,18 @@ window.addEventListener("scroll", function () {
 /* ----- MENU TOGGLE ----- */
 
 const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector("nav");
+const nav = document.querySelector(".nav");
 
-menuToggle.addEventListener("click", function () {
+menuToggle.addEventListener("click", () => {
     nav.classList.toggle("active");
 });
+
+document.addEventListener("click", function (event) {
+    const isClickInsideNav = nav.contains(event.target);
+    const isClickOnMenuBtn = menuToggle.contains(event.target);
+
+    if (!isClickInsideNav && !isClickOnMenuBtn) {
+        nav.classList.remove("active");
+    }
+});
+

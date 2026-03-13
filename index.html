@@ -10,30 +10,44 @@
         content="Portfolio of Abdul Rehman (AR Stack) - Frontend Developer specializing in modern web applications." />
     <meta name="author" content="Abdul Rehman" />
 
-    <link rel="icon" href="favicon.png" />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
     <script defer src="./assets/js/main.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-    <header>
-        <a href="#" class="logo"><span>ar</span> stack</a>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">skills</a></li>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="./assets/img/favicon.png" alt="AR Stack logo">
+            <span>AR</span> Stack
+        </a>
+
+        <nav class="nav" aria-label="Main Navigation">
+            <ul class="nav-list">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
             </ul>
         </nav>
+
         <div class="nav-btns">
-            <a href="#" class="contact-btn">Contact Me</a>
-            <i class="fa-solid fa-bars menu-toggle"></i>
+            <a href="#" class="contact-btn">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact Me</span>
+            </a>
+
+            <button class="theme-toggle" type="button" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="menu-toggle" type="button" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
@@ -42,7 +56,7 @@
             <div class="hero-content">
                 <h1>Abdul Rehman</h1>
                 <p>Frontend Developer specializing in modern web applications.</p>
-                <a href="#" class="contact-btn">Contact Me</a>
+                <!-- <a href="#" class="contact-btn">Contact Me</a> -->
             </div>
         </section>
 
