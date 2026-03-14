@@ -25,3 +25,20 @@ document.addEventListener("click", function (event) {
     }
 });
 
+
+
+// Multitext Effect
+var typingEffect = new Typed(".multiText", {
+    strings: ["Programmer", "Freelancer", "UI/UX Designer", "Full-Stack Developer"],
+    loop: true,
+    typeSpeed: 50,
+    backSpeed: 50,
+    startDelay: 500,
+    backDelay: 1000
+});
+
+
+
+const track = document.querySelector(".marquee-track");
+
+track.innerHTML += track.innerHTML;
