@@ -1,11 +1,6 @@
 /* ----- FONT FAMILIES ----- */
 
 @font-face {
-    font-family: Calibri;
-    src: url(../fonts/Calibri-Medium.ttf);
-}
-
-@font-face {
     font-family: Mont;
     src: url(../fonts/Montserrat.ttf);
 }
@@ -96,14 +91,14 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.2rem 5%;
+    padding: 1.5rem 8%;
     z-index: 100;
     transition: all 0.3s ease;
 }
 
 .header.sticky {
     background: var(--primary);
-    padding: 1rem 5%;
+    padding: 1rem 8%;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -564,7 +559,6 @@ header.sticky .nav-list li a.active {
     align-items: center;
     text-align: center;
     background: url("../img/banner-1.jpg") center/cover no-repeat;
-    margin: 80px 0;
     overflow: hidden;
 }
 
@@ -598,6 +592,75 @@ header.sticky .nav-list li a.active {
     font-size: 1rem;
     padding: 0.8rem 1.8rem;
 }
+
+
+/* ----- FOOTER ----- */
+
+.footer {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 60px 8% 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+}
+
+.footer-left {
+    max-width: 400px;
+}
+
+.footer-logo {
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    font-size: 0.95rem;
+    color: var(--grey);
+    line-height: 1.6;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    color: var(--grey);
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--secondary);
+    transform: translateX(3px);
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid var(--light);
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--secondary);
+}
+
 
 
 
