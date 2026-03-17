@@ -26,8 +26,8 @@ document.addEventListener("click", function (event) {
 });
 
 
+/* ----- MULTI-TEXT TYPING EFFECT ----- */
 
-// Multitext Effect
 var typingEffect = new Typed(".multiText", {
     strings: ["Programmer", "Freelancer", "UI/UX Designer", "Full-Stack Developer"],
     loop: true,
@@ -37,8 +37,5 @@ var typingEffect = new Typed(".multiText", {
     backDelay: 1000
 });
 
-
-
 const track = document.querySelector(".marquee-track");
-
 track.innerHTML += track.innerHTML;

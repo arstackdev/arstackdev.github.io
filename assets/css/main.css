@@ -1,8 +1,8 @@
 /* ----- FONT FAMILIES ----- */
 
 @font-face {
-    font-family: Dosis;
-    src: url(../fonts/Dosis.ttf);
+    font-family: Calibri;
+    src: url(../fonts/Calibri-Medium.ttf);
 }
 
 @font-face {
@@ -16,8 +16,8 @@
 }
 
 @font-face {
-    font-family: Poppins;
-    src: url(../fonts/Poppins-Regular.ttf);
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
 }
 
 
@@ -42,7 +42,7 @@
 }
 
 body {
-    font-family: OpenSans, Arial, Helvetica, sans-serif;
+    font-family: Mont, Arial, Helvetica, sans-serif;
     background: var(--primary);
     color: var(--secondary);
 }
@@ -96,14 +96,14 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 5%;
+    padding: 1.2rem 5%;
     z-index: 100;
     transition: all 0.3s ease;
 }
 
 .header.sticky {
     background: var(--primary);
-    padding: 1.2rem 5%;
+    padding: 1rem 5%;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -120,7 +120,7 @@ li {
 }
 
 .logo img {
-    width: 2rem;
+    width: 1.75rem;
     margin-right: 0.4rem;
 }
 
@@ -134,23 +134,34 @@ li {
     text-transform: capitalize;
     position: relative;
     transition: color 0.3s ease;
+    width: max-content;
 }
 
 .nav-list li a.active::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
-    background: var(--accent);
+    background: var(--secondary);
 }
 
 .nav-list li a:hover {
-    color: var(--accent);
+    text-shadow: 0 0 1px currentColor;
+    transition: 0.3s text-shadow ease;
 }
+
+header.sticky .nav-list li a.active::after {
+    display: none;
+}
+
+header.sticky .nav-list li a.active {
+    text-shadow: 0 0 1px currentColor;
+}
+
 
 .nav-btns {
     display: flex;
@@ -162,6 +173,7 @@ li {
     display: flex;
     align-items: center;
     gap: 0.4rem;
+    border: none;
 }
 
 .contact-btn i {
@@ -207,7 +219,7 @@ li {
 
 .hero-welcome {
     color: var(--grey);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: .5rem;
 }
 
@@ -329,12 +341,68 @@ li {
 }
 
 
-section.about {
-    height: 100vh;
-    display: flex;
+/* ----- ABOUT SECTION ----- */
+
+.about {
+    padding: 100px 5%;
+    background: #ffffff;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
     align-items: center;
+}
+
+.about-image {
+    display: flex;
     justify-content: center;
 }
+
+.about-image img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.about-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--light-secondary);
+    margin-bottom: 1.8rem;
+}
+
+.about-highlights {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.about-highlights li {
+    position: relative;
+    padding-left: 18px;
+    font-size: 0.95rem;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.about .btn {
+    display: inline-block;
+}
+
+
 
 /* @media (prefers-color-scheme: dark) {
     :root {
