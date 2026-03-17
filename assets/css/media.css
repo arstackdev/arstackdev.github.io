@@ -145,3 +145,24 @@
         padding: 1.2rem;
     }
 }
+
+
+
+
+/* ----- FEATURED PROJECTS ----- */
+
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-preview {
+        padding: 80px 5%;
+    }
+
+    .project-image img {
+        height: 160px;
+    }
+}
