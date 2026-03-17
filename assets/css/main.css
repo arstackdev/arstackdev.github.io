@@ -206,7 +206,7 @@ header.sticky .nav-list li a.active {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20vh 5% 5vh;
+    padding: 20vh 3% 5vh;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -400,6 +400,69 @@ header.sticky .nav-list li a.active {
 
 .about .btn {
     display: inline-block;
+}
+
+
+/* ----- SKILLS PREVIEW ----- */
+
+.skills-preview {
+    padding: 90px 5%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.skills-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.skills-subtitle {
+    color: var(--light-secondary);
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.skill-tags {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.skill-tags li {
+    background: #f9f9f9;
+    color: var(--secondary);
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.btn-all-skills {
+    display: inline-block;
+    margin-top: 2rem;
 }
 
 

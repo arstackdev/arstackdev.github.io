@@ -126,3 +126,22 @@
         font-size: 1rem;
     }
 }
+
+
+/* ----- SKILLS PREVIEW SECTION ----- */
+
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 1.2rem;
+    }
+}
